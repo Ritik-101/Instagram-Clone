@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/Instagram_icon.png.webp">
+
+    <!-- Css Linkup -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap LinkUp -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img src="img/logo.PNG" class="ins-img" alt="">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <img src="img/home.PNG" class="icon" alt="">
+                <img src="img/messenger.PNG" class="icon" alt="">
+                <img data-bs-toggle="modal" data-bs-target="#post-add-modal" src="img/add.PNG" class="icon" alt="">
+                <img src="img/explore.PNG" class="icon" alt="">
+                <img src="img/like.PNG" class="icon" alt="">
+                <div class="icon user-profile"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Story Section Start -->
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/rohini.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">rohiniii</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/ritesh.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">ritzz__</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/jerry.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">jerry.berry</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/akansha.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">maybe-akansha</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/zeeshan.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">zeeshan_jafri</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/selena.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">selena_99</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/mehul.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">me_meansmehul</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="img/ariana.jpg" height="150" width="150" alt=""></div>
+                        <p class="username">oh_itzAriana</p>
+                    </div>
+                </div>
+                
+                <div class="all-post">
+                    <div class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile-pic">
+                                    <img src="img/profile.jpg" alt="">
+                                </div>
+                                <p class="username">jimmy_uzuhi</p>
+                            </div>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a data-bs-toggle="modal" editLsData="${item.id}" data-bs-target="#edit-modal" class="dropdown-item post_edit" href="#">Edit</a></li>
+                                    <li> <a href="" class="dropdowm-item post_delete" deleteLsData="${item.id}" href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="img/profile.jpg" class="post-image" alt="">
+                        <div class="post-content">
+                            <div class="reaction-wrapper">
+                                <img src="img/like.png" alt="" class="icon">
+                                <img src="img/comment.png" alt="" class="icon">
+                                <img src="img/send.png" alt="" class="icon">
+                                <img src="img/save.png" alt="" class="icon">
+                            </div>
+                            <p class="likes">99 likes</p>
+                            <p class="description">Hey! its jimmy_uzuhi</p>
+                            <p class="post-time">April 25</p>
+                        </div>
+                        <div class="comment-wrapper">
+                            <img src="img/smile.png" alt="" class="icon">
+                            <input type="text" class="comment-box" placeholder="Add a comment">
+                            <button class="comment-btn">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Story Section End -->
+
+    <!-- Sidebar Section Start --> 
+        <div class="right-col">
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/profile.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">jimmy_uzuhi</p>
+                    <p class="sub-text">Jimmy Otsuna Uzuhi</p>
+                </div>
+                <button class="action-btn">switch</button>
+            </div>
+            <p class="suggestion-text">Suggestions for you</p>
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/linda.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">linda_gomez</p>
+                    <p class="sub-text">Followed by selena_99</p>
+                </div>
+                <button class="action-btn">follow</button>
+            </div>
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/akhil.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">akhil_teyam</p>
+                    <p class="sub-text">New to Instagram</p>
+                </div>
+                <button class="action-btn">follow</button>
+            </div>
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/jessica.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">real_jessica</p>
+                    <p class="sub-text">Followed by jerry.berry + 2 more</p>
+                </div>
+                <button class="action-btn">follow</button>
+            </div>
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/rebecca.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">aka_rebecca</p>
+                    <p class="sub-text">Followed by ritzz__ + 1 more</p>
+                </div>
+                <button class="action-btn">follow</button>
+            </div>
+            <div class="profile-card">
+                <div class="profile-pic">
+                    <img src="img/john.jpg" height="150" width="150" alt="">
+                </div>
+                <div>
+                    <p class="username">dope.jhon</p>
+                    <p class="sub-text">Followed by zeeshan_jafri</p>
+                </div>
+                <button class="action-btn">follow</button>
+            </div>
+        </div>
+    
+    <!-- Sidebar Section End -->
+    </section>
+
+
+    <!-- create Post Modal Start -->
+    <div class="modal fade" id="post-add-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2>Create Post</h2>
+                    <hr>
+                    <div class="msg"></div>
+                    <form id="post_add_form">
+                        <div class="my-3">
+                            <label for="">Author Name</label>
+                            <input name="aname" type="text" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Author Profile Photo</label>
+                            <input name="aphoto" type="text" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Post Content</label>
+                            <textarea name="pcontent" class="form-control" placeholder="Write a caption..."></textarea>
+                        </div>
+                        <div class="my-3">
+                            <label for="">Post Photo</label>
+                            <input name="pphoto" type="text" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Please Mention Your Post Date</label>
+                            <input name="pdate" type="date" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <!-- <button type="button" class="btn btn-primary w-100">Create Post</button> -->
+                            <input type="submit" class="form-control w-100" value="Create Post">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- create Post Modal End  -->
+
+
+    <!-- Edit Modal Start -->
+    <!-- Edit Modal -->
+   <div class="modal fade" id="edit-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Your Post</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="msg"></div>
+                <form action="" id="edit_post">  
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+    <!-- Edit Modal End -->
+
+    
+    <!-- JavaScript Linkup -->
+    <script src="js/function.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
